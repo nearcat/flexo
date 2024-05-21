@@ -19,7 +19,7 @@ var menuCtl	= {
 	getCont	: function(pgId) {
 
 		var nenuCnt	= 7;
-		for(var pos=1; pos<=7; pos++) {
+		for(var pos=0; pos<=7; pos++) {
 			if(pos==pgId) {
 				$("#contsLyr"+pos).show();
 			} else {
@@ -58,13 +58,13 @@ var menuCtl	= {
 
 
 
-		<div class="container" id="contsLyr1">
+		<div class="container" id="contsLyr0">
 
 			<header class="header">
-				<div class="logo">HA NI HILL</div>
+				<div class="logo" style="cursor:pointer;" onclick="menuCtl.getCont(0);">HA NI HILL</div>
 			</header>
 			<nav class="navbar">
-				<b class="nav-link">New Arrivals</b>
+				<a href="#" class="nav-link" onclick="menuCtl.getCont(1);">New Arrivals</a>
 				<a href="#" class="nav-link" onclick="menuCtl.getCont(2);">Woman</a>
 				<a href="#" class="nav-link" onclick="menuCtl.getCont(3);">Man</a>
 				<a href="#" class="nav-link" onclick="menuCtl.getCont(4);">Jewelry</a>
@@ -97,10 +97,33 @@ var menuCtl	= {
 
 		</div>
 
+
+
+		<div class="container" id="contsLyr1">
+
+			<header class="header">
+				<div class="logo" style="cursor:pointer;" onclick="menuCtl.getCont(0);">HA NI HILL</div>
+			</header>
+			<nav class="navbar">
+				<b class="nav-link">New Arrivals</b>
+				<a href="#" class="nav-link" onclick="menuCtl.getCont(2);">Woman</a>
+				<a href="#" class="nav-link" onclick="menuCtl.getCont(3);">Man</a>
+				<a href="#" class="nav-link" onclick="menuCtl.getCont(4);">Jewelry</a>
+				<a href="#" class="nav-link" onclick="menuCtl.getCont(5);">Eco Goods</a>
+				<a href="#" class="nav-link" onclick="menuCtl.getCont(6);">Goods</a>
+				<a href="#" class="nav-link" onclick="menuCtl.getCont(7);">HANIHILL'S</a>
+			</nav>
+
+			<div class="banner">
+				<h1>New Arrivals</h1>
+			</div>
+
+		</div>
+
 		<div class="container" id="contsLyr2" style="display:none">
 
 			<header class="header">
-				<div class="logo">HA NI HILL</div>
+				<div class="logo" style="cursor:pointer;" onclick="menuCtl.getCont(0);">HA NI HILL</div>
 			</header>
 			<nav class="navbar">
 				<a href="#" class="nav-link" onclick="menuCtl.getCont(1);">New Arrivals</a>
@@ -120,7 +143,7 @@ var menuCtl	= {
 		<div class="container" id="contsLyr3" style="display:none">
 
 			<header class="header">
-				<div class="logo">HA NI HILL</div>
+				<div class="logo" style="cursor:pointer;" onclick="menuCtl.getCont(0);">HA NI HILL</div>
 			</header>
 			<nav class="navbar">
 				<a href="#" class="nav-link" onclick="menuCtl.getCont(1);">New Arrivals</a>
@@ -140,7 +163,7 @@ var menuCtl	= {
 		<div class="container" id="contsLyr4" style="display:none">
 
 			<header class="header">
-				<div class="logo">HA NI HILL</div>
+				<div class="logo" style="cursor:pointer;" onclick="menuCtl.getCont(0);">HA NI HILL</div>
 			</header>
 			<nav class="navbar">
 				<a href="#" class="nav-link" onclick="menuCtl.getCont(1);">New Arrivals</a>
@@ -160,7 +183,7 @@ var menuCtl	= {
 		<div class="container" id="contsLyr5" style="display:none">
 
 			<header class="header">
-				<div class="logo">HA NI HILL</div>
+				<div class="logo" style="cursor:pointer;" onclick="menuCtl.getCont(0);">HA NI HILL</div>
 			</header>
 			<nav class="navbar">
 				<a href="#" class="nav-link" onclick="menuCtl.getCont(1);">New Arrivals</a>
@@ -180,7 +203,7 @@ var menuCtl	= {
 		<div class="container" id="contsLyr6" style="display:none">
 
 			<header class="header">
-				<div class="logo">HA NI HILL</div>
+				<div class="logo" style="cursor:pointer;" onclick="menuCtl.getCont(0);">HA NI HILL</div>
 			</header>
 			<nav class="navbar">
 				<a href="#" class="nav-link" onclick="menuCtl.getCont(1);">New Arrivals</a>
@@ -200,7 +223,7 @@ var menuCtl	= {
 		<div class="container" id="contsLyr7" style="display:none">
 
 			<header class="header">
-				<div class="logo">HA NI HILL</div>
+				<div class="logo" style="cursor:pointer;" onclick="menuCtl.getCont(0);">HA NI HILL</div>
 			</header>
 			<nav class="navbar">
 				<a href="#" class="nav-link" onclick="menuCtl.getCont(1);">New Arrivals</a>
