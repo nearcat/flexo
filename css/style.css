@@ -29,7 +29,6 @@
 /* 최상단 레이어 스타일 */
 .top-layer {
 	background-color: #00E5FF;
-	color: #f00;
 	padding: 10px 20px;
 	position: fixed;
 	top: 0;
