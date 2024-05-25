@@ -103,7 +103,7 @@ body {
 }
 
 .banner {
-	background-image: url('https://via.placeholder.com/1500x500');
+/*	background-image: url('https://via.placeholder.com/1500x500');*/
 	background-size: cover;
 	height: 500px;
 	display: flex;
