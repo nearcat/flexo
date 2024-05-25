@@ -111,6 +111,15 @@ body {
 	align-items: center;
 }
 
+.banner625 {
+	background-size: cover;
+	height: 625px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
 .banner h1 {
 	font-size: 48px;
 	color: #fff;
