@@ -70,7 +70,7 @@ body {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1600px;
 	margin: 0 auto;
 	padding: 20px;
 }
@@ -133,12 +133,14 @@ body {
 
 .product {
 	display: inline-block;
-	margin: 0 20px;
+/*	margin: 0 20px;*/
+	margin: 0px;
 	text-align: center;
 }
 
 .product img {
-	max-width: 100%;
+/*	max-width: 100%;*/
+	max-width:296px;
 }
 
 .product h2 {
