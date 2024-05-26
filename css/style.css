@@ -163,7 +163,7 @@ body {
 
 .featured-products {
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .product {
@@ -194,6 +194,26 @@ body {
 
 }
 
+.prdt-tb {
+	display: inline-block;
+	width:1500px;
+	border:0px;
+	border-spacing: 8px;
+	border-collapse: separate;
+	text-align: center;
+	/*background-color:#FAFAFA;*/
+}
+
+.prdt-tb > tbody > tr {
+	width:100%;
+}
+
+.prdt-tb > tbody > tr > td {
+	width:365px;
+	height:365px;
+	text-align: center;
+	background-color:#FAFAFA;
+}
 
 
 
