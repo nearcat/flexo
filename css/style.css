@@ -59,9 +59,6 @@
 	color: #fff; 
 }
 
-
-
-
 body {
 	font-family: 'NanumGothicLight','NanumGothic','NanumGothicBold','NanumGothicExtraBold';
 	margin-top: 0;
@@ -88,10 +85,32 @@ body {
 	font-family: 'onyx';
 }
 
+.nav-div {
+	align:center;
+	max-width:1200px;
+	min-width:1000px;
+	text-align: center;
+	margin: auto;
+	width: 80%;
+	background-color:#FFFFE0;
+}
+
 .navbar {
 	background-color: #fff;
 	padding: 10px 0;
 	text-align: center;
+}
+
+.navbar-lt {
+	background-color: #fff;
+	padding: 10px 0;
+	text-align: left;
+}
+
+.navbar-rt {
+	background-color: #fff;
+	padding: 10px 0;
+	text-align: right;
 }
 
 .nav-link {
@@ -114,6 +133,22 @@ body {
 .banner625 {
 	background-size: cover;
 	height: 625px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner515 {
+	background-size: cover;
+	height: 515px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner300 {
+	background-size: cover;
+	height: 300px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
