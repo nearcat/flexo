@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>HA NI HILL</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="./css/style.css?ver=202406011923" />
+		<script src="./js/com/common.js"></script>
+		<script src="./js/com/jquery-3.7.1.min.js"></script>
+<style>
+</style>
+
+<script>
+// 닫기 버튼을 클릭할 때 최상단 레이어를 숨기는 JavaScript 함수
+
+var menuCtl	= {
+	getCont	: function(pgId) {
+
+		var	contUrl	= './conts/mu'+pgId+'00.html';
+
+		$.ajax({
+			 url		: contUrl
+			,data		: {}
+			,type		: 'get'
+			,success	: function(html) {
+				//console.log(result);
+
+				var nenuCnt	= 7;
+				for(var pos=0; pos<=7; pos++) {
+					if(pos==pgId) {
+						$("#L"+pos).addClass("mub");
+					} else {
+						$("#L"+pos).removeClass("mub");
+					}
+				}
+
+				$('#contId').html(html);
+			}
+			,error: function() {
+			}
+			,complete: function() {
+			}
+		});
+	}
+
+};
+
+</script>
+	</head>
+	<body>
+
+		<div class="top-layer">
+			<div class="fist-msg">홈페이지는 현재 오픈준비중입니다! 빠른 시일내에 오픈세일과 함께 만나 뵙겠습니다.</div>
+			<button class="close-btn" onclick="closeTopLayer()">X</button>
+		</div>
+
+		<div class="container" id="contsLyr0">
+
+			<header class="header">
+				<div class="logo" style="cursor:pointer;" onclick="menuCtl.getCont(0);">HA NI HILL</div>
+			</header>
+
+			<div class="nav-div">
+				<nav class="navbar">
+					<a href="#" class="nav-link" onclick="menuCtl.getCont(0);"><span id="L0">⌂</span></a>
+					<a href="#" class="nav-link" onclick="menuCtl.getCont(1);"><span id="L1">New Arrivals</span></a>
+					<a href="#" class="nav-link" onclick="menuCtl.getCont(2);"><span id="L2">Woman</span></a>
+					<a href="#" class="nav-link" onclick="menuCtl.getCont(3);"><span id="L3">Man</span></a>
+					<a href="#" class="nav-link" onclick="menuCtl.getCont(4);"><span id="L4">Jewelry</span></a>
+					<a href="#" class="nav-link" onclick="menuCtl.getCont(5);"><span id="L5">Bags</span></a>
+					<a href="#" class="nav-link" onclick="menuCtl.getCont(6);"><span id="L6">Goods</span></a>
+					<a href="#" class="nav-link" onclick="menuCtl.getCont(7);"><span id="L7">HANIHILL'S</span></a>
+				</nav>
+			</div>
+
+			<div id="contId">
+				<div class="banner">
+					<img src="./img/cate/mu000/bnr-100.png" width="1500px" />
+				</div>
+
+				<div class="featured-products">
+					<table class="prdt-tb" align="center">
+						<tbody>
+							<tr>
+								<td><img src="./img/cate/mu000/prod/main_p_01.png" /></td>
+								<td><img src="./img/cate/mu000/prod/main_p_02.png" /></td>
+								<td><img src="./img/cate/mu000/prod/main_p_03.png" /></td>
+								<td><img src="./img/cate/mu000/prod/main_p_04.png" /></td>
+							</tr>
+							<tr>
+								<td><img src="./img/cate/mu000/prod/main_p_05.png" /></td>
+								<td><img src="./img/cate/mu000/prod/main_p_06.png" /></td>
+								<td><img src="./img/cate/mu000/prod/main_p_07.png" /></td>
+								<td><img src="./img/cate/mu000/prod/main_p_08.png" /></td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
