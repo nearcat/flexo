@@ -291,7 +291,10 @@ ul li {
 }
 
 .sTit {
-	padding-top:10px;
 	font-size:20px;
 }
 
+.corpdesc {
+	padding:15px 15px 15px 15px;
+	vertical-align:top;
+}
