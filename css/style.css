@@ -19,7 +19,6 @@
 	src: url('../font/NanumGothicExtraBold.ttf') format('truetype');
 }
 
-
 * {
 	margin: 0;
 	padding: 0;
@@ -245,7 +244,44 @@ ul li {
 	color: #999;
 }
 
+.corpdiv {
+	width:100%;
+}
 
+.corptb {
+	width:100%;
+	min-width:600px;
+}
 
+.lt {
+	text-align:left;
+}
 
+.ct {
+	text-align:center;
+}
 
+.rt {
+	text-align:right;
+}
+
+.hdr {	
+	font-family: 'onyx';
+	height:120px;
+	font-size:36px;
+	vertical-align:middle;
+}
+
+.ftr {
+	height:80px;
+	vertical-align:middle;
+	font-weight:bold;
+}
+
+.bfa {
+	background-color:#fafafa;
+}
+
+.sTit {
+	font-size:20px;
+}
